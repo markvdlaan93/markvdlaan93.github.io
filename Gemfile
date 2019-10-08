@@ -8,6 +8,8 @@ gem 'jekyll-paginate'
 
 gem "nokogiri", ">= 1.10.4"
 
+gem "rubyzip", ">= 1.3.0"
+
 group :jekyll_plugins do
     gem "jekyll-paginate"
 end
