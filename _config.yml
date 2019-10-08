@@ -248,9 +248,11 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
-plugins:
+plugins_dir:
   - jekyll-paginate
   - jekyll-sitemap
+
+gems: [jekyll-paginate]
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
