@@ -249,6 +249,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages (= 197)
   jekyll-paginate
+  nokogiri (>= 1.10.4)
 
 BUNDLED WITH
    2.0.2
