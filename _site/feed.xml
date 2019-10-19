@@ -12,6 +12,7 @@
           
           In this post, I will explain how you can use an Arduino to get firmware on an AVR microcontroller (e.g. ATMega328P).
 
+
         </description>
         <pubDate>Sat, 12 Oct 2019 00:00:00 +0200</pubDate>
         <link>/2019-10-12-isr-programmer/</link>
