@@ -10,7 +10,7 @@
         <title>How to get firmware on an AVR microcontroller?</title>
         <description>
           Use Arduino as In-System Programmer (ISP) - 
-          Overview Okay cool, you now bought all the necessities to start programming your AVR MCU (MicroController Unit) but how do you actually get code on the chip itself? How do you supply power to the MCU? In this post, I will discuss all the necessary steps that you need to...
+          Overview Okay cool, you now bought all the necessities to start programming your AVR microcontroller but how do you actually get code on the chip itself? How do you supply power to the microcontroller? In this post, I will discuss all the necessary steps. We will blink a LED to...
         </description>
         <pubDate>Sat, 12 Oct 2019 00:00:00 +0200</pubDate>
         <link>/2019-10-12-isr-programmer/</link>
