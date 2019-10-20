@@ -21,6 +21,7 @@ You need to have the following supplies:
 * **220Ω resistor:** Avoid that the LED receives too much current.
 
 ![In-System Programmer components](/img/isp_components.jpg "Components for Arduino Uno / AVR microcontroller setup"){: height=75% }
+
 *Components that I have used for the setup*
 
 ## Options
@@ -34,6 +35,7 @@ This is the most expensive option that you can choose. Besides uploading the fir
 These development boards cost somewhere between the €50,- and €80,- depending on where you live. These are at least the prices within the Netherlands.
 
 ![Microchip AVR Dragon](/img/dragon.png "AVR Dragon") ![Microchip STK500](/img/stk500.png "STK500")
+
 *AVR Dragon (left) and STK500 (right)*
 
 ### Simple programmer
