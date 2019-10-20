@@ -24,9 +24,13 @@ You need to have the following supplies:
 
 ## Options
 
-In order to get firmware on the AVR microcontroller you have several options: 
+In order to get firmware on the AVR microcontroller you have several options. Each of these come with pros and cons based on costs and ease of usage. 
 
 ### Development board
+
+This is the most expensive option that you can choose. Besides uploading the firmware to the microcontroller, you can also use techniques like On Debug Chip (ODP). Like the name suggests, it allows you to debug your firmware more effectively. There are different options for AVR microcontrollers but the most popular one seems to be the [STK500](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSTK500) and the [AVR Dragon](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATAVRDRAGON) both produced by Microchip (formely Atmel). 
+
+These development boards come for somewhere between the €50,- and €80,- depending on where you live. This are at least the prices within the Netherlands.
 
 ### Simple programmer
 
