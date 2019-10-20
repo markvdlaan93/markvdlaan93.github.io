@@ -32,6 +32,8 @@ This is the most expensive option that you can choose. Besides uploading the fir
 
 These development boards come for somewhere between the €50,- and €80,- depending on where you live. This are at least the prices within the Netherlands.
 
+![AVR Dragon](/img/dragon.png "AVR Dragon") ![STK500](/img/stk500.png "STK500")
+
 ### Simple programmer
 
 ### Arduino
