@@ -2,7 +2,7 @@
 layout: post
 title: How to get firmware on an AVR microcontroller?
 subtitle: Use Arduino as In-System Programmer (ISP)
-image: /img/powersymbol.png
+image:
 ---
 
 ## Overview
