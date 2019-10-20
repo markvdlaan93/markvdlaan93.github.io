@@ -20,7 +20,14 @@ You need to have the following supplies:
 * **Led:** We need to actually do something to see whether the firmware is succesfully uploaded to the chip. Therefore, we will start with turning on a Light Emitted Diode (LED).
 * **220Ω resistor:** Avoid that the LED receives too much current.
 
-![In-System Programmer components](/img/isp_components.jpg "Components for Arduino Uno / AVR microcontroller setup")
+![In-System Programmer components](/img/isp_components.jpg "Components for Arduino Uno / AVR microcontroller setup"){ height=75% }
 
 ## Options
-To get firmware 
+
+In order to get firmware on the AVR microcontroller you have several options: 
+
+### Development board
+
+### Simple programmer
+
+### Arduino
