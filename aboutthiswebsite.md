@@ -12,7 +12,7 @@ This blog presents a serie of articles which explains everything you need to kno
 
 ## The author
 
-![Mark van der Laan](/img/mark.png "Photo of Mark van der Laan")
+![Mark van der Laan](/img/mark.png "Photo of Mark van der Laan"){ width="400" height="400" style="display: block; margin: 0 auto" }
 
 **Professional live:** Since December 2018, I work as a DevOps engineer in the Netherlands. My work primarily consists of developing API's, managing NoSQL databases with terabytes of data and build the necessary infrastructure. Technologies that I'm currently using professionaly: Amazon Web Services (AWS), Java Spring Boot, Cassandra, Terraform, Ansible, Docker and Kubernetes. Before December 2018, I have been both a part-time (during college) and full-time Backend Web Developer, primarily working in PHP (Symfony and CakePHP). 
 
