@@ -20,7 +20,8 @@ You need to have the following supplies:
 * **Led:** We need to actually do something to see whether the firmware is succesfully uploaded to the chip. Therefore, we will start with turning on a Light Emitted Diode (LED).
 * **220Ω resistor:** Avoid that the LED receives too much current.
 
-![In-System Programmer components](/img/isp_components.jpg "Components for Arduino Uno / AVR microcontroller setup"){ height=75% }
+![In-System Programmer components](/img/isp_components.jpg "Components for Arduino Uno / AVR microcontroller setup"){: height=75% }
+*Components that I have used for the setup*
 
 ## Options
 
@@ -30,9 +31,10 @@ In order to get firmware on the AVR microcontroller you have several options. Ea
 
 This is the most expensive option that you can choose. Besides uploading the firmware to the microcontroller, you can also use techniques like On Debug Chip (ODP). Like the name suggests, it allows you to debug your firmware more effectively. There are different options for AVR microcontrollers but the most popular one seems to be the [STK500](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATSTK500) and the [AVR Dragon](https://www.microchip.com/DevelopmentTools/ProductDetails/PartNO/ATAVRDRAGON) both produced by Microchip (formely Atmel). 
 
-These development boards come for somewhere between the €50,- and €80,- depending on where you live. This are at least the prices within the Netherlands.
+These development boards cost somewhere between the €50,- and €80,- depending on where you live. These are at least the prices within the Netherlands.
 
-![AVR Dragon](/img/dragon.png "AVR Dragon") ![STK500](/img/stk500.png "STK500")
+![Microchip AVR Dragon](/img/dragon.png "AVR Dragon") ![Microchip STK500](/img/stk500.png "STK500")
+*AVR Dragon (left) and STK500 (right)*
 
 ### Simple programmer
 
