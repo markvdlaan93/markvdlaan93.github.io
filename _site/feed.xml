@@ -7,12 +7,10 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
-        <title>Use Arduino as an In-System Programmer</title>
+        <title>How to get firmware on an AVR microcontroller?</title>
         <description>
-          
-          In this post, I will explain how you can use an Arduino to get firmware on an AVR microcontroller (e.g. ATMega328P).
-
-
+          Use Arduino as In-System Programmer (ISP) - 
+          Overview Okay cool, you now bought all the necessities to start programming your AVR MCU (MicroController Unit) but how do you actually get code on the chip itself? How do you supply power to the MCU? In this post, I will discuss all the necessary steps that you need to...
         </description>
         <pubDate>Sat, 12 Oct 2019 00:00:00 +0200</pubDate>
         <link>/2019-10-12-isr-programmer/</link>
