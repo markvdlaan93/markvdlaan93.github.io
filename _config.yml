@@ -118,7 +118,7 @@ share-links-active:
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-# disqus: ""
+disqus: "markvdlaan93-github-io"
 
 # If you want to use JustComments fill with the API Key
 #just-comments: "ABCD-EFGH-IJKL"
@@ -128,14 +128,14 @@ share-links-active:
 
 # To use Staticman comments, fill in repository, branch, and endpoint
 staticman:
-  repository : markvdlaan93/markvdlaan93.github.io # GitHub username/repository eg. "daattali/beautiful-jekyll"
+  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
   branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
-  endpoint   : https://api.staticman.net/v3/entry/github/ # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
+  endpoint   : # URL of your own deployment, with a trailing slash (will fallback to a public GitLab instance) eg. https://<your-api>/v3/entry/github/
   reCaptcha:
     # reCaptcha for Staticman (OPTIONAL, but recommended for spam protection)
     # If you use reCaptcha, you must also set these parameters in staticman.yml
-    siteKey  : "6LfXdL4UAAAAADjR4H_zxSz3hJz8rJeNRXs49ZJL" # Use your own site key, you need to apply for one on Google
-    secret   : "rqLDE//5OnJu+Vi+ugLgvBlaQ0Ht9Dck42EphMzt9xVFNJYqzNw+W8RnqF4LD9a2EkN15gMIJH0x9/VsDJSRpCFaCLl8IdCVSvJe4Xke1JLuqs+4gNHwIFKEcP92v5QVXhzguE4LRVfq3RwAqRL1Hjkjm+nhPgyl9WMO3mCRD7u0HYmFVU3jET4njVzrHOx8tSoIoyxEUPc1fpX328KTWkbcZTUhPT9V3YXGRQLrsiQNxqsGlU5HW+tpP9rXtyAyXsAtjSBzQBVFwLGLECwqndRnflRroc7DCPtaeEkoQQ8oQPl3N1KJLNIAunNX/FLx9pqQpPx7wsNqwl7YfKd4zQ==" # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
+    siteKey  : # Use your own site key, you need to apply for one on Google
+    secret   : # ENCRYPT your password by going to https://staticman3.herokuapp.com/v3/encrypt/<your-site-secret>
 
 # --- Misc --- #
 
