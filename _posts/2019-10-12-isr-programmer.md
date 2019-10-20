@@ -50,3 +50,9 @@ These programmers are a lot cheaper than full development boards and are shipped
 
 ### Arduino
 
+Since the Arduino Uno internally also uses an AVR microcontroller, it can also be used to get firmware on another AVR microcontroller (in this case, the microcontroller which is going to turn on a LED).
+
+## Setup
+
+If you already have an Arduino at your disposal (like I have), it seems like a great plan to use it for uploading your firmware. More precisely, we will use the Arduino Uno to upload a bootloader. This bootloader is a small program which can place another program (the firmware to turn on the LED) at the right place in the microcontrollers' memory. 
+
