@@ -40,4 +40,13 @@ These development boards cost somewhere between the €50,- and €80,- dependin
 
 ### Simple programmer
 
+Another option is to use a more simple device to get firmware on the chip. A simple programmer consists of a USB socket with so-called In Circuit Serial Programming (ICSP) pins. I never tried this option myself so I'm not entirely sure how you get this option up and running.
+
+These programmers are a lot cheaper than full development boards and are shipped in the Netherlands for as little as €5,-.
+
+![Simple AVR programmer with In Circuit Serial Programming (ICSP) pins](/img/avr_simple_programmer.png "Simple AVR programmer In Circuit Serial Programming (ICSP) pins")
+
+*A simple AVR programmer with ICSP pins*
+
 ### Arduino
+
