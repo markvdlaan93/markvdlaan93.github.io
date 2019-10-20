@@ -10,6 +10,8 @@ image:
 Okay cool, you now bought all the necessities to start programming your AVR microcontroller but how do you actually get code on the chip itself? How do you supply power to the microcontroller? In this post, I will discuss all the necessary steps. We will blink a LED to check whether the setup is working properly. 
 
 ## Prerequisites
+
+You need to have the following supplies:
 * **Breadboard**
 * **Jumper cables**
 * **Arduino Uno:** It doesn't really matter if you get a new real one or a fake Chinese copy.
@@ -17,4 +19,7 @@ Okay cool, you now bought all the necessities to start programming your AVR micr
 * **Led:** We need to actually do something to see whether the firmware is succesfully uploaded to the chip. Therefore, we will start with turning on a Light Emitted Diode (LED).
 * **220Ω resistor:** Avoid that the LED receives too much current.
 
+![In-System Programmer components](/img/isp_components.jpg "Components for Arduino Uno / AVR microcontroller setup")
+
 ## Options
+To get firmware 
