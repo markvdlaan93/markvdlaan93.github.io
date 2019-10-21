@@ -89,6 +89,9 @@ Now that we have installed the software that we need, we can setup the breadboar
 
 *Setup of breadboard*
 
+![breadboard setup photo 1](/img/setup_isp_1.png "breadboard setup photo 1") ![breadboard setup photo 2](/img/setup_isp_2.png "breadboard setup photo 2")
+![breadboard setup photo 3](/img/setup_isp_3.png "breadboard setup photo 3") ![breadboard setup photo 4](/img/setup_isp_4.png "breadboard setup photo 4")
+
 ## Code for turning on the LED
 
 In this section, you can find the code for turning on the LED. I have added some extra comments regarding bitshifting operations. Bitshifting operations are often used in interfacing hardware because it makes it possible to control individual bits within a byte (in this case controlling port D).
