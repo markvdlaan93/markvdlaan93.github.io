@@ -21,7 +21,7 @@ You need to have the following supplies:
 * **220Ω resistor:** Avoid that the LED receives too much current.
 * **Basic programming knowledge:** You should now what variables, loops and a function are.
 
-![In-System Programmer components](/img/isp_components.jpg "Components for Arduino Uno / AVR microcontroller setup"){: height=75% }
+![In-System Programmer components](/img/isp_components.jpg "Components for Arduino Uno / AVR microcontroller setup"){:height="50%" width="50%"}
 
 *Components that I have used for the setup*
 
