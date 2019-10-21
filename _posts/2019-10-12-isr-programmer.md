@@ -56,7 +56,54 @@ Since the Arduino Uno internally also uses an AVR microcontroller, it can also b
 
 *Arduino Uno*
 
-## Setup
+## Uploading the bootloader
 
 If you already have an Arduino at your disposal (like I have), it seems like a great plan to use it for uploading your firmware. More precisely, we will use the Arduino Uno to upload a bootloader. This bootloader is a small program which can place another program (the firmware to turn on the LED) at the right place in the microcontrollers' memory. 
 
+Execute the following steps:
+1. First you need to download [Arduino IDE v1.0.5](https://www.arduino.cc/en/Main/OldSoftwareReleases#1.0.x) and install it
+2. Download [the boatloader](https://github.com/markvdlaan93/avr-projects/tree/master/isp_arduino_breadboard) from my project repository
+3. Locate the sketchbook directory in the Arduino IDE (under `file > preferences`)
+4. If it does not exist yet, create a `hardware` directory inside the sketchbook directory
+5. Extract the zip from step 2 and move the `breadboard` directory to the `hardware` directory
+6. Connect the Arduino Uno through USB to the computer
+7. Open the Arduino IDE (for Linux make sure you run it in sudo mode)
+8. In the Arduino IDE, make sure the board is selected: `tools > Board > Arduino Uno`
+9. In the Arduino IDE, choose `file > examples > ArduinoISP`
+10. Compile and upload the code to the Arduino Uno
+
+## AVRDude
+
+Now that we made the Arduino ready to burn our firmware on the chip, we need to install a tool called AVRDude:
+
+> [AVRDUDE](https://www.nongnu.org/avrdude/) is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers using the in-system programming technique (ISP). 
+
+In other words, AVRDude is a command line tool that we can use to upload new firmware on the fly and with relative ease. Based on your OS, you can use *apt* (Linux Debian-based), *homebrew* (Mac OS X) or read [this guideline](http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/windows_avr.html) (Windows).
+
+## Use Makefile
+
+Because you don't want to remember the exact command everytime you want to upload a new version of your program, it is convenient to use some kind of script. Makefiles are made exactly for this purposes. I'm currently using the following Makefile:
+
+```
+# Depending on your OS, you need to edit the PORT_ID
+PORT_ID=/dev/ttyACM0
+MCU=atmega328p
+F_CPU=1200000
+CC=avr-gcc
+PROGRAMMER_ID=stk500v1
+OBJCOPY=avr-objcopy
+CFLAGS=-std=c99 -Wall -g -Os -mmcu=${MCU} -DF_CPU=${F_CPU} -I.
+TARGET=main
+SRCS=main.c
+BAUD_RATE=19200
+
+all:
+		${CC} ${CFLAGS} -o ${TARGET}.bin ${SRCS}
+		${OBJCOPY} -j .text -j .data -O ihex ${TARGET}.bin ${TARGET}.hex
+
+flash:
+		avrdude -v -P ${PORT_ID} -b ${BAUD_RATE} -c ${PROGRAMMER_ID} -p ${MCU} -U flash:w:${TARGET}.hex
+
+clean:
+		rm -f *.bin *.hex
+```
