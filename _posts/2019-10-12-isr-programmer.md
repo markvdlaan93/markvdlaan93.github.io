@@ -93,7 +93,7 @@ Now that we have installed the software that we need, we can setup the breadboar
 
 ![breadboard setup photo 3](/img/isp_programmer/setup_isp_3.JPG "breadboard setup photo 3"){:height="40%" width="40%"} ![breadboard setup photo 4](/img/isp_programmer/setup_isp_4.JPG "breadboard setup photo 4"){:height="40%" width="40%"}
 
-*Pictures of my setup. Contrary to the schematic above, this one also has the LED and resistor attached to it ([full size pictures](/img/isp_programmer))*
+*Pictures of my setup. Contrary to the schematic above, this one also has the LED and resistor attached to it ([full size pictures](https://github.com/markvdlaan93/markvdlaan93.github.io/tree/master/img/isp_programmer))*
 
 ## Code for turning on the LED
 
