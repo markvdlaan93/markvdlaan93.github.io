@@ -82,7 +82,7 @@ In other words, AVRDude is a command line tool that we can use to upload new fir
 
 ## Use Makefile
 
-Because you don't want to remember the exact command everytime you want to upload a new version of your program, it is convenient to use some kind of script. Makefiles are made exactly for this purposes. I'm currently using the following Makefile:
+Because you don't want to remember the exact command everytime you want to upload a new version of your program, it is convenient to use some kind of script. Makefiles are made exactly for this purpose. I'm currently using the following Makefile:
 
 ```
 # Depending on your OS, you need to edit the PORT_ID
@@ -107,3 +107,5 @@ flash:
 clean:
 		rm -f *.bin *.hex
 ```
+
+From the directory where the file is stored, you can compile the code by running `sudo make` and upload the code the microcontroller by running `sudo make flash`. 
