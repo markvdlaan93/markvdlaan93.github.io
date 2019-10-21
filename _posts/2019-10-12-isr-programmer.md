@@ -91,8 +91,10 @@ You can store this code in a file called `main.c`.
 
 void setupIoLed(){
   /**
-   * 1<<0 = move 1 zero places to the left. Often used for consistency with other bitwise operations.
-   * DDRx = Data Direction Register = 8 bit register for controlling the directionality of the pin.
+   * 1<<0 = move 1 zero places to the left. Often used for consistency 
+   * with other bitwise operations.
+   * DDRx = Data Direction Register = 8 bit register for controlling 
+   * the directionality of the pin.
    * If 1 than it is an output pin, if 0 than it is an input pin.
    * DDRD = Data Direction Register of port D
    * 
@@ -101,22 +103,23 @@ void setupIoLed(){
    * 1<<0 = 0000 0001
    *        --------- OR
    *        0010 1101
-   * Thus first pin of port D is set as output pin (= drives the signal) regardless of bits in other
-   * pins.
+   * Thus first pin of port D is set as output pin (= drives the 
+   * signal) regardless of bits in other pins.
    */
   DDRD |= (1<<0);
 
   /**
-   * PORTX is used to write data to the port pins. PINX (not used here) is used for reading data
-   * from the port pins. Both are 8 bit registers.
+   * PORTX is used to write data to the port pins. PINX (not used here) 
+   * is used for reading data from the port pins. Both are 8 bit registers.
    * 
    * PORTD = 1010 0000
    * 1<<0  = 0000 0001
    *         --------- OR
    *         1010 0001
-   * Thus first pin of port D is set to high regardless of the values of other bits. Behavior
-   * of this pin will adjust after an interrupt is triggered. This line is just added so that
-   * you can see that the LED is working without interrupt.
+   * Thus first pin of port D is set to high regardless of the values of 
+   * other bits. Behavior of this pin will adjust after an interrupt is 
+   * triggered. This line is just added so that you can see that the LED 
+   * is working without interrupt.
    */
   PORTD |= (1<<0);
 }
