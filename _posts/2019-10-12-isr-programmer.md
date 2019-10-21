@@ -126,7 +126,7 @@ void setupIoLed(){
 int main(void){
   setupIoLed();
 
-  // Loop forever, interrupts do the rest
+  // Loop forever
   while(1) { }
 }
 ```
