@@ -110,16 +110,15 @@ void setupIoLed(){
 
   /**
    * PORTX is used to write data to the port pins. PINX (not used here) 
-   * is used for reading data from the port pins. Both are 8 bit registers.
+   * is used for reading data from the port pins. Both are 8 bit 
+   * registers.
    * 
    * PORTD = 1010 0000
    * 1<<0  = 0000 0001
    *         --------- OR
    *         1010 0001
    * Thus first pin of port D is set to high regardless of the values of 
-   * other bits. Behavior of this pin will adjust after an interrupt is 
-   * triggered. This line is just added so that you can see that the LED 
-   * is working without interrupt.
+   * other bits. This will turn on the LED on the first index of Port D
    */
   PORTD |= (1<<0);
 }
