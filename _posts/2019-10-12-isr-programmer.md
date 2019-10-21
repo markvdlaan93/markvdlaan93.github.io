@@ -80,6 +80,55 @@ Now that we made the Arduino ready to burn our firmware on the chip, we need to 
 
 In other words, AVRDude is a command line tool that we can use to upload new firmware on the fly and with relative ease. Based on your OS, you can use *apt* (Linux Debian-based), *homebrew* (Mac OS X) or read [this guideline](http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/windows_avr.html) (Windows).
 
+## Code for turning on the LED
+
+In this section, you can find the code for turning on the LED. I have added some extra comments regarding bitshifting operations. Bitshifting operations are often used in interfacing hardware because it makes it possible to control individual bits within a byte (in this case controlling port D).
+
+You can store this code in a file called `main.c`.
+
+```
+#include <avr/io.h>
+
+void setupIoLed(){
+  /**
+   * 1<<0 = move 1 zero places to the left. Often used for consistency with other bitwise operations.
+   * DDRx = Data Direction Register = 8 bit register for controlling the directionality of the pin.
+   * If 1 than it is an output pin, if 0 than it is an input pin.
+   * DDRD = Data Direction Register of port D
+   * 
+   * Example: 
+   * DDRD = 0010 1100
+   * 1<<0 = 0000 0001
+   *        --------- OR
+   *        0010 1101
+   * Thus first pin of port D is set as output pin (= drives the signal) regardless of bits in other
+   * pins.
+   */
+  DDRD |= (1<<0);
+
+  /**
+   * PORTX is used to write data to the port pins. PINX (not used here) is used for reading data
+   * from the port pins. Both are 8 bit registers.
+   * 
+   * PORTD = 1010 0000
+   * 1<<0  = 0000 0001
+   *         --------- OR
+   *         1010 0001
+   * Thus first pin of port D is set to high regardless of the values of other bits. Behavior
+   * of this pin will adjust after an interrupt is triggered. This line is just added so that
+   * you can see that the LED is working without interrupt.
+   */
+  PORTD |= (1<<0);
+}
+
+int main(void){
+  setupIoLed();
+
+  // Loop forever, interrupts do the rest
+  while(1) { }
+}
+```
+
 ## Use Makefile
 
 Because you don't want to remember the exact command everytime you want to upload a new version of your program, it is convenient to use some kind of script. Makefiles are made exactly for this purpose. I'm currently using the following Makefile:
