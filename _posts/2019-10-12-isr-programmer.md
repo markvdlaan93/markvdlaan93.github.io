@@ -19,6 +19,7 @@ You need to have the following supplies:
 * **AVR ATMega MCU:** It doesn't matter which one you get. In this post, I will use an ATMega328P (same one that is used in the Arduino itself).
 * **Led:** We need to actually do something to see whether the firmware is succesfully uploaded to the chip. Therefore, we will start with turning on a Light Emitted Diode (LED).
 * **220Ω resistor:** Avoid that the LED receives too much current.
+* **Basic programming knowledge:** You should now what variables, loops and a function are.
 
 ![In-System Programmer components](/img/isp_components.jpg "Components for Arduino Uno / AVR microcontroller setup"){: height=75% }
 
@@ -79,6 +80,14 @@ Now that we made the Arduino ready to burn our firmware on the chip, we need to 
 > [AVRDUDE](https://www.nongnu.org/avrdude/) is a utility to download/upload/manipulate the ROM and EEPROM contents of AVR microcontrollers using the in-system programming technique (ISP). 
 
 In other words, AVRDude is a command line tool that we can use to upload new firmware on the fly and with relative ease. Based on your OS, you can use *apt* (Linux Debian-based), *homebrew* (Mac OS X) or read [this guideline](http://fab.cba.mit.edu/classes/863.16/doc/projects/ftsmin/windows_avr.html) (Windows).
+
+## Breadboard setup
+
+Now that we have installed the software that we need, we can setup the breadboard:
+
+![breadboard setup](/img/arduino_uno_setup_isp.png "Breadboard setup")
+
+*Setup of breadboard*
 
 ## Code for turning on the LED
 
