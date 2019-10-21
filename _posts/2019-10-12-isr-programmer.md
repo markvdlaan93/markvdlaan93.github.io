@@ -89,8 +89,8 @@ Now that we have installed the software that we need, we can setup the breadboar
 
 *Setup of breadboard*
 
-![breadboard setup photo 1](/img/setup_isp_1.png "breadboard setup photo 1") ![breadboard setup photo 2](/img/setup_isp_2.png "breadboard setup photo 2")
-![breadboard setup photo 3](/img/setup_isp_3.png "breadboard setup photo 3") ![breadboard setup photo 4](/img/setup_isp_4.png "breadboard setup photo 4")
+![breadboard setup photo 1](/img/setup_isp_1.JPG "breadboard setup photo 1") ![breadboard setup photo 2](/img/setup_isp_2.JPG "breadboard setup photo 2")
+![breadboard setup photo 3](/img/setup_isp_3.JPG "breadboard setup photo 3") ![breadboard setup photo 4](/img/setup_isp_4.JPG "breadboard setup photo 4")
 
 ## Code for turning on the LED
 
