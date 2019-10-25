@@ -95,8 +95,7 @@ share-links-active:
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: "<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="UA-87960696-3"
+gtag: "UA-87960696-3"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
