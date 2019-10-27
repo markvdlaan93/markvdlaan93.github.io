@@ -16,3 +16,9 @@ image:
 #### Light-Emitting Diode (LED)
 
 ### Buzzer 
+
+### Integrated circuits
+
+#### Shift register
+
+#### Temperature sensor
