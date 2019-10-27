@@ -3,6 +3,7 @@ layout: post
 title: How to get firmware on an AVR microcontroller?
 subtitle: Use Arduino as In-System Programmer (ISP)
 image:
+tags: AVR microcontroller, ATMega, In-System Programmer (ISP), C programming
 ---
 
 ## Overview
