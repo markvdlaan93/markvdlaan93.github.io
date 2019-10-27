@@ -9,11 +9,17 @@ image:
 
 ## Components
 
-### Capacitor
-
 ### Diode 
 
 #### Light-Emitting Diode (LED)
+
+### Capacitor
+
+### Transistor
+
+### Inductor
+
+### Resistor
 
 ### Buzzer 
 
