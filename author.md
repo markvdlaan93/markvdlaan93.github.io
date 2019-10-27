@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Mark van der Laan
-subtitle: 
+title: Author
+subtitle: Mark van der Laan
 image: /img/mark.png
 ---
 
