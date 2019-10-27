@@ -164,14 +164,14 @@ SRCS=main.c
 BAUD_RATE=19200
 
 all:
-		${CC} ${CFLAGS} -o ${TARGET}.bin ${SRCS}
-		${OBJCOPY} -j .text -j .data -O ihex ${TARGET}.bin ${TARGET}.hex
+	${CC} ${CFLAGS} -o ${TARGET}.bin ${SRCS}
+	${OBJCOPY} -j .text -j .data -O ihex ${TARGET}.bin ${TARGET}.hex
 
 flash:
-		avrdude -v -P ${PORT_ID} -b ${BAUD_RATE} -c ${PROGRAMMER_ID} -p ${MCU} -U flash:w:${TARGET}.hex
+	avrdude -v -P ${PORT_ID} -b ${BAUD_RATE} -c ${PROGRAMMER_ID} -p ${MCU} -U flash:w:${TARGET}.hex
 
 clean:
-		rm -f *.bin *.hex
+	rm -f *.bin *.hex
 ```
 
 From the directory where the file is stored, you can compile the code by running `sudo make` and upload the code the microcontroller by running `sudo make flash`. 
