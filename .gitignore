@@ -10,3 +10,5 @@ ehthumbs.db
 
 vendor
 .bundle
+
+_compress_images_cache.yml

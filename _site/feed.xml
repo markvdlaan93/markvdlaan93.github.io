@@ -12,9 +12,20 @@
           Use Arduino as In-System Programmer (ISP) - 
           Overview Okay cool, you now bought all the necessities to start programming your AVR microcontroller but how do you actually get code on the chip itself? How do you supply power to the microcontroller? In this post, I will discuss all the necessary steps. We will blink a LED to...
         </description>
-        <pubDate>Sat, 12 Oct 2019 00:00:00 +0200</pubDate>
-        <link>/2019-10-12-isr-programmer/</link>
-        <guid isPermaLink="true">/2019-10-12-isr-programmer/</guid>
+        <pubDate>Sun, 27 Oct 2019 00:00:00 +0200</pubDate>
+        <link>/2019-10-27-isp-programmer/</link>
+        <guid isPermaLink="true">/2019-10-27-isp-programmer/</guid>
+      </item>
+    
+      <item>
+        <title>Overview electronic components</title>
+        <description>
+          Most common used components - 
+          Overview In this article, I give a quick overview of all the basic electronic components that you will use during developing electronic circuits. Components Breadboard A breadboard is a component which you can use to components. Breadboards come in different sizes and their names stems from the fact that back...
+        </description>
+        <pubDate>Fri, 25 Oct 2019 00:00:00 +0200</pubDate>
+        <link>/2019-10-25-electronic-components/</link>
+        <guid isPermaLink="true">/2019-10-25-electronic-components/</guid>
       </item>
     
   </channel>
