@@ -29,13 +29,13 @@ void setupClock(){
 
 ### Abbreviations
 
-When you first start programming in C for the AVR microcontroller, you quickly encounter many abbreviations. Therefore, I made a list of all the abbrevations used in the code above. I added a suffix `X` which indicates that there a multiple options for a certain construct. Here's the list:
-* TCCR1X = Time/Counter Control Register = used to set the counting mode
-* CSX = Clock Select = used to configure the prescaler
-* OCRX = Ouput Control Register = maximum value to which the microcontroller should count before resetting.
-* WGMX = Waveform Generation Mode = used to turn on CTC mode.
-* TIMSKX = Timer Interrupt Mask Register = register where each bit is a on or off for a specific interrupt.
-* OCIE1X = Timer/Counter Output Compare Match Interrupt Enable = bit of specific interrupt given as parameter in the ISR(TIMER1_COMPA_vect) function (see next section). URL with list of interrupts that are supported: http://ee-classes.usc.edu/ee459/library/documents/avr_intr_vectors/
+When you first start programming in C for the AVR microcontroller, you quickly encounter many unknown abbreviations. You can of course start reading the [datasheet](https://www.sparkfun.com/datasheets/Components/SMD/ATMega328.pdf) but, especially in the beginning, it is pretty daunting. Therefore, I made a list of all the abbrevations used in the code above:
+* **Time/Counter Control Register** = TCCR1X = used to set the counting mode
+* **Clock Select** = CSX = used to configure the prescaler
+* **Ouput Control Register** = OCRX = maximum value to which the microcontroller should count before resetting.
+* **Waveform Generation Mode** = WGMX = used to turn on CTC mode.
+* **Timer Interrupt Mask Register** = TIMSKX = register where each bit is a on or off for a specific interrupt.
+* **Timer/Counter Output Compare Match Interrupt Enable** = OCIE1X = bit of specific interrupt given as parameter in the ISR(TIMER1_COMPA_vect) function (see next section). URL with list of interrupts that are supported: http://ee-classes.usc.edu/ee459/library/documents/avr_intr_vectors/
 
 ### Function explained
 
