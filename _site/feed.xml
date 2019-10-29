@@ -7,6 +7,17 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>How to use AVR C timer and interrupt registers?</title>
+        <description>
+          C programming with AVR microcontroller - 
+          Overview In this article, I will explain how to build C programs in which you can control the timer and interrupt registers of an AVR microcontroller. If don’t know where to start with programming, I have a tutorial here that explains the basics of how to setup a microcontroller and...
+        </description>
+        <pubDate>Tue, 29 Oct 2019 00:00:00 +0100</pubDate>
+        <link>/2019-10-29-avr-c-timer/</link>
+        <guid isPermaLink="true">/2019-10-29-avr-c-timer/</guid>
+      </item>
+    
+      <item>
         <title>How to get firmware on an AVR microcontroller?</title>
         <description>
           Use Arduino as In-System Programmer (ISP) - 
@@ -15,17 +26,6 @@
         <pubDate>Sun, 27 Oct 2019 00:00:00 +0200</pubDate>
         <link>/2019-10-27-isp-programmer/</link>
         <guid isPermaLink="true">/2019-10-27-isp-programmer/</guid>
-      </item>
-    
-      <item>
-        <title>Overview electronic components</title>
-        <description>
-          Most common used components - 
-          Overview In this article, I give a quick overview of all the basic electronic components that you will use during developing electronic circuits. Components Breadboard A breadboard is a component which you can use to components. Breadboards come in different sizes and their names stems from the fact that back...
-        </description>
-        <pubDate>Fri, 25 Oct 2019 00:00:00 +0200</pubDate>
-        <link>/2019-10-25-electronic-components/</link>
-        <guid isPermaLink="true">/2019-10-25-electronic-components/</guid>
       </item>
     
   </channel>

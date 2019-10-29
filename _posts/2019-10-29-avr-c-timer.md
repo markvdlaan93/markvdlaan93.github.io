@@ -89,13 +89,6 @@ void setupIoLed(){
    */
   PORTD |= (1<<0);
 }
-
-int main(void){
-  setupIoLed();
-
-  // Loop forever
-  while(1) { }
-}
 ```
 
 ## Main function
