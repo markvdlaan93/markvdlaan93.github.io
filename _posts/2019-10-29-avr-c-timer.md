@@ -35,7 +35,7 @@ When you first start programming in C for the AVR microcontroller, you quickly e
 * **Ouput Control Register** = OCRX = maximum value to which the microcontroller should count before resetting.
 * **Waveform Generation Mode** = WGMX = used to turn on CTC mode.
 * **Timer Interrupt Mask Register** = TIMSKX = register where each bit is a on or off for a specific interrupt.
-* **Timer/Counter Output Compare Match Interrupt Enable** = OCIE1X = bit of specific interrupt given as parameter in the ISR(TIMER1_COMPA_vect) function (see next section). URL with list of interrupts that are supported: http://ee-classes.usc.edu/ee459/library/documents/avr_intr_vectors/
+* **Timer/Counter Output Compare Match Interrupt Enable** = OCIE1X = bit of specific interrupt given as parameter in the ISR(TIMER1_COMPA_vect) function (see next section). Here is a [link](http://ee-classes.usc.edu/ee459/library/documents/avr_intr_vectors/) with list of interrupts that are supported.
 
 ### Function explained
 
