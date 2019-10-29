@@ -3,6 +3,7 @@ layout: post
 title: Overview electronic components
 subtitle: Most common used components
 image:
+tags: electronic, component, breadboard, led, capacitor, resistor, integrated circuits
 ---
 
 ## Overview
