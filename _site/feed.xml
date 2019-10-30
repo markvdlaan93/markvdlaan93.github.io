@@ -29,12 +29,10 @@
       </item>
     
       <item>
-        <title>Bitshifting operations in C programming for AVR</title>
+        <title>Bit shifting in C programming for AVR</title>
         <description>
           C programming with AVR microcontroller - 
-          Overview
-
-
+          Overview In this article, I give a short overview of bit shifting operations (or bitwise operations) in the C programming language. For programming AVR microcontrollers, bitwise operations are great to alter individual bits inside a register. Manipulating registers without bitwise operations A naive approach for manipulating registers is to set...
         </description>
         <pubDate>Fri, 25 Oct 2019 00:00:00 +0200</pubDate>
         <link>/2019-10-25-avr-c-bitshifting/</link>

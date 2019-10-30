@@ -81,7 +81,7 @@ ISR(TIMER1_COMPA_vect)
 }
 ```
 
-This function describes an interrupt which is generated based on the settings in the timing register. For AVR timers and interrupts, I have an article [here]({{ site.baseurl }}{% link _posts/2019-10-27-avr-c-timer.md %}). 
+This function describes an interrupt which is generated based on the settings in the timing register. For AVR timers and interrupts, I have an article [here]({{ site.baseurl }}{% link _posts/2019-10-29-avr-c-timer.md %}). 
 
 The goal of this function is to flip the first bit in the register, everytime the interrupt is triggered:
 > 0000 0001
