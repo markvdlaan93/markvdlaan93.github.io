@@ -15,9 +15,11 @@ In this article, I give a short overview of bit shifting operations (or bitwise 
 A naive approach for manipulating registers is to set the entire byte in a single operation:
 ```
 void setupIoPins(){
-    // DDRD = Data Direction Register D = configure the eight pins of Port D. 
+    // DDRD = Data Direction Register D = configure the eight pins of 
+    // Port D. 
     // 0 = input pin; 1 = output pin
-    // In this case, we want to set the first, second, third and fourth pin as output pin.
+    // In this case, we want to set the first, second, third and fourth 
+    // pin as output pin.
     DDRD = 0b00001111;
 }
 
@@ -33,9 +35,11 @@ The problem of this approach is that it is difficult to target a single bit insi
 With bit shifting, we can avoid this by targetting indivual bits:
 ```
 void setupIoPins(){
-    // DDRD = Data Direction Register D = configure the eight pins of Port D. 
+    // DDRD = Data Direction Register D = configure the eight pins of 
+    // Port D. 
     // 0 = input pin; 1 = output pin
-    // In this case, we want to set the first, second, third and fourth pin as output pin.
+    // In this case, we want to set the first, second, third and fourth 
+    // in as output pin.
     DDRD = DDRD | (1<<0); // same as DDRD |= (1<<0);
     DDRD = DDRD | (1<<1);
     DDRD = DDRD | (1<<2);
