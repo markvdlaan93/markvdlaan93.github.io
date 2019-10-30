@@ -50,9 +50,9 @@ void main(){
 ### Set individual bit high, regardless of value (OR)
 
 The example above works because `(1<<0)` translates to one, zero places to the left or `0000 0001`. The DDRD register can be any value. Lets take `0110 0000` as example. The single pipe symbol (`|`) stands for a logical OR:
-> 0000 0001
-> 0110 0000
-> --------- OR
+> 0000 0001&nbsp;
+> 0110 0000&nbsp;
+> --------- OR&nbsp;
 > 0110 0001
 
 ### Set individual bit low, regardless of value (AND/NOT)
@@ -65,9 +65,9 @@ void setupIoPins(){
 ```
 
 This code makes sure that the first pin of port D is zero which means that it is an input pin. This works as follows (initial value of DDRD doesn't matter):
-> ~(0000 0001) = 1111 1110
-> DDRD         = 0110 0111
->               ---------- AND
+> ~(0000 0001) = 1111 1110&nbsp;
+> DDRD         = 0110 0111&nbsp;
+>               ---------- AND&nbsp;
 >                0110 0110
 
 ### Flip individual bits in register (XOR)
@@ -84,7 +84,7 @@ ISR(TIMER1_COMPA_vect)
 This function describes an interrupt which is generated based on the settings in the timing register. For AVR timers and interrupts, I have an article [here]({{ site.baseurl }}{% link _posts/2019-10-29-avr-c-timer.md %}). 
 
 The goal of this function is to flip the first bit in the register, everytime the interrupt is triggered:
-> 0000 0001
-> 0110 0001
-> --------- XOR
+> 0000 0001&nbsp;
+> 0110 0001&nbsp;
+> --------- XOR&nbsp;
 > 0110 0000
