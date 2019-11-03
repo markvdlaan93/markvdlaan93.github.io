@@ -51,19 +51,23 @@ void main(){
 }
 ```
 
+In this example, `<<` is the left-wise bit shifting operator which shifts the number on the righthand side a certain amount of places to the left (depending on the given number and the size of the register). Lets take `1<<3` as an example. `1<<3` means that we move one, three places to the left. Because the register is eight bits, one moved three places to the left translates to `0000 1000`. 
+
+We also have a right-wise bit shifting operator (`>>`) at our disposal which does the same but moves all bits to the right instead of the left. 
+
 ### Set individual bit high, regardless of value (OR)
 
-The example above works because `(1<<0)` translates to one, zero places to the left or `0000 0001`. The DDRD register can be any value. Lets take `0110 0000` as example. The single pipe symbol (`|`) stands for a logical OR:
+In the above example, we use `OR` to set the first, second, third and fourth bit high of the data direction register, regardless of the current value of those bits. Lets take the first bit as an example. The first bit shifting operation (`1<<0`) translates to one, zero places to the left or `0000 0001`. The DDRD register can be any value. Lets take `0110 0000` as example. The single pipe symbol (`|`) stands for a logical OR:
 ```
-0000 0001
-0110 0000
+0000 0001 (1<<0)
+0110 0000 (DDRD)
 --------- OR
 0110 0001
 ```
 
 ### Set individual bit low, regardless of value (AND/NOT)
 
-In order to make sure that an individual bit will be set to zero regardless of the value, you need to use a combination of the logical AND (`&`) operator and the logical NOT or Tilde (`~`). This operation is necessary when you want to configure an IO pin as an input pin:
+In order to make sure that an individual bit will be set to zero regardless of the value, you need to use a combination of the logical AND (`&`) operator and the logical NOT or Tilde (`~`) operator. This operation is necessary when you want to configure an IO pin as an input pin:
 ```
 void setupIoPins(){
     DDRD &= ~(1 << 0);
