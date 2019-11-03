@@ -98,7 +98,7 @@ Now that we have installed the software that we need, we can setup the breadboar
 
 ## Code for turning on the LED
 
-In this section, you can find the code for turning on the LED. I have added some extra comments regarding bitshifting operations. Bitshifting operations are often used in interfacing hardware because it makes it possible to control individual bits within a byte (in this case controlling port D).
+In this section, you can find the code for turning on the LED. I have added some extra comments regarding bitshifting operations (more elaborated in my article about [bit shifting operations]({{ site.baseurl }}{% link _posts/2019-10-25-avr-c-bitshifting.md %}). Bitshifting operations are often used in interfacing hardware because it makes it possible to control individual bits within a byte (in this case controlling port D).
 
 You can store this code in a file called `main.c`.
 

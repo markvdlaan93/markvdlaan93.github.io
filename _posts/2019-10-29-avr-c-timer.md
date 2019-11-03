@@ -37,9 +37,9 @@ When you first start programming in C for the AVR microcontroller, you quickly e
 * **Timer Interrupt Mask Register** = TIMSKX = register where each bit is a on or off for a specific interrupt.
 * **Timer/Counter Output Compare Match Interrupt Enable** = OCIE1X = bit of specific interrupt given as parameter in the ISR(TIMER1_COMPA_vect) function (see next section). Here is a [link](http://ee-classes.usc.edu/ee459/library/documents/avr_intr_vectors/) with list of interrupts that are supported.
 
-### Function explained
+### Setup clock function explained
 
-Here's a function for configuring the microcontroller so that an interrupt is triggered every second. The ATMega328P has three timers. For this code, register 1 is used which has 16 bits.
+The `setupClock()`-function configures the timer registers so that an interrupt is triggered every second. The ATMega328P has three timers. For this code, register 1 is used which has 16 bits.
 
 Since the ATMega328P microcontroller runs at 1MHz or 1 million clock cycles per second, 16 bits is not enough (already reduced from 8MHz). Therefore, a pre-scaler is used which reduces a higher frequency signal into a lower one (options: 1, 8, 64, 256 or 1024). Check the clock frequency of your AVR microcontroller in the datasheets.
 
@@ -47,11 +47,13 @@ This first step is to setup the pre-scaler so that it can count to 1 million. Th
 
 CS10 and CS11 combined means that a prescaler of 64 is selected. Here, we select a prescaler of 64. After that, 1.000.000 / 64 = 15625 or 0 to 15624 thus 15624 is set as value for the output compare register. 
 
-Now it is important to enable Clear Timer on Compare (CTC) mode so that the counter is resetted when the maximum value of 15624 is reached. 
+Now, it is important to enable Clear Timer on Compare (CTC) mode so that the counter is resetted when the maximum value of 15624 is reached. 
 
 The interrupt is now ready to be turned on by assigning the bit of the specific interrupt OCIE1A to the register with enabled interrupts for timer 1 (TIMSK1).
 
 ## Configure in- and ouput
+
+After configuring the timer registers, it is important to configure the IO pins. As you can see in the breadboard setup above, I connected the LED to the first pin of PORTD. Therefore, it is important to alter the data direction register of PORTD. By setting the first bit high, you let the microcontroller know that the first pin is an output pin. I'm using bit shifting operations to control individual bits in the register (more elaborated in my article about [bit shifting operations]({{ site.baseurl }}{% link _posts/2019-10-25-avr-c-bitshifting.md %})). 
 
 ```
 #include <avr/io.h>
