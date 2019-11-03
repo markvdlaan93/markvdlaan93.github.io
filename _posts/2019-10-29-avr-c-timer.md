@@ -14,7 +14,7 @@ In this article, I will explain how to build C programs in which you can control
 
 In this article, I will focus on how to blink a LED by generating an interrupt every second. I have the following breadboard setup:
 
-![Breadboard setup](/img/led/atmega328p_led_bb.png "Breadboard setup")
+![Breadboard setup](/img/led/atmega328p_led_bb.png "Breadboard setup"){:height="50%" width="50%"}
 
 ## Setup timer and interrupt register code
 
