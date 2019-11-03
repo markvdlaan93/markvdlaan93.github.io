@@ -7,6 +7,28 @@
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
     
       <item>
+        <title>Use 7-segment 4-digit display with 8-bit AVR microcontroller</title>
+        <description>
+          
+          Overview
+
+
+
+Prerequisites
+
+Common anode or cathode display
+
+Breadboard setup
+
+The code
+
+        </description>
+        <pubDate>Sun, 03 Nov 2019 00:00:00 +0100</pubDate>
+        <link>/2019-11-03-seven-segment-four-digit-display/</link>
+        <guid isPermaLink="true">/2019-11-03-seven-segment-four-digit-display/</guid>
+      </item>
+    
+      <item>
         <title>How to use AVR C timer and interrupt registers?</title>
         <description>
           C programming with AVR microcontroller - 
