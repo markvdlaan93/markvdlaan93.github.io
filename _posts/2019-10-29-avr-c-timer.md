@@ -8,13 +8,13 @@ tags: C programming, AVR, time register
 
 ## Overview
 
-In this article, I will explain how to build C programs in which you can control the timer and interrupt registers of an AVR microcontroller. If don't know where to start with programming, I have a tutorial [here]({{ site.baseurl }}{% link _posts/2019-10-27-isp-programmer.md %}) that explains the basics of how to setup a microcontroller and blink a LED.
+In this article, I will explain how to build C programs in which you can control the timer and interrupt registers of an AVR microcontroller. If don't know where to start, I have a tutorial [here]({{ site.baseurl }}{% link _posts/2019-10-27-isp-programmer.md %}) that explains the basics of how to setup a microcontroller and turn on a LED.
 
 ## Objective
 
 In this article, I will focus on how to blink a LED by generating an interrupt every second. I have the following breadboard setup:
 
-INSERT_IMAGE
+![Breadboard setup](/img/led/atmega328p_led_bb.png "Breadboard setup")
 
 ## Setup timer and interrupt register code
 

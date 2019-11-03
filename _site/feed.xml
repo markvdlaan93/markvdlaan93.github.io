@@ -10,7 +10,7 @@
         <title>How to use AVR C timer and interrupt registers?</title>
         <description>
           C programming with AVR microcontroller - 
-          Overview In this article, I will explain how to build C programs in which you can control the timer and interrupt registers of an AVR microcontroller. If don’t know where to start with programming, I have a tutorial here that explains the basics of how to setup a microcontroller and...
+          Overview In this article, I will explain how to build C programs in which you can control the timer and interrupt registers of an AVR microcontroller. If don’t know where to start, I have a tutorial here that explains the basics of how to setup a microcontroller and turn on...
         </description>
         <pubDate>Tue, 29 Oct 2019 00:00:00 +0100</pubDate>
         <link>/2019-10-29-avr-c-timer/</link>
