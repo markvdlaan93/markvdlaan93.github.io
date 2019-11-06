@@ -10,18 +10,7 @@
         <title>Use 7-segment 4-digit display with 8-bit AVR microcontroller</title>
         <description>
           
-          Overview
-
-
-
-Prerequisites
-
-Common anode or cathode display
-
-Breadboard setup
-
-The code
-
+          Overview Prerequisites Common anode or cathode display Breadboard setup The code #include &amp;lt;avr/io.h&amp;gt; #include &amp;lt;util/delay.h&amp;gt; void setupIo(){ for(int i = 0; i &amp;lt; 5; i++){ DDRC |= (1&amp;lt;&amp;lt;i); } for(int i = 0; i &amp;lt; 8; i++){ DDRD |= (1&amp;lt;&amp;lt;i); } } void resetDisplay(){ PORTC &amp;amp;= 0x0; PORTD &amp;amp;= 0x0;...
         </description>
         <pubDate>Sun, 03 Nov 2019 00:00:00 +0100</pubDate>
         <link>/2019-11-03-seven-segment-four-digit-display/</link>

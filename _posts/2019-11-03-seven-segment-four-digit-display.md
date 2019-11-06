@@ -14,7 +14,7 @@ tags: AVR microcontroller, ATMega, C programming, 7-segment display
 
 ## Common anode or cathode display
 
-
+![Common cathode and common anode 7-segment 4-digit display](/img/seven_segment_four_digit/anode_cathode.png "Seven segment four digit common cathode and common anode"){:height="50%" width="50%"}
 
 ## Breadboard setup
 
