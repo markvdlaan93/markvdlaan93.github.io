@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: Embedded development
+title: Mark van der Laan
 
 # Short description of your site
-description: Tutorials for embedded development 
+description: Personal blog about programming 
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -20,7 +20,6 @@ description: Tutorials for embedded development
 
 # List of links in the navigation bar
 navbar-links:
-  About this website: "aboutthiswebsite"
   Author: "author"
 
 # Image to show in the navigation bar - image must be a square (width = height)

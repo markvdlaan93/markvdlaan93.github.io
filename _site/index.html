@@ -6,15 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
 
-  <title>Embedded development - Tutorials for embedded development</title>
+  <title>Mark van der Laan - Personal blog about programming</title>
 
   <meta name="author" content="Mark van der Laan" />
 
   
-  <meta name="description" content="Everything you need to know about programming microcontrollers, setting up breadboards and more">
-  
 
-  <link rel="alternate" type="application/rss+xml" title="Embedded development - Tutorials for embedded development" href="/feed.xml" />
+  <link rel="alternate" type="application/rss+xml" title="Mark van der Laan - Personal blog about programming" href="/feed.xml" />
 
   
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -70,11 +68,11 @@
   
 
   
-  <meta property="og:title" content="Embedded development tutorials" />
+  <meta property="og:title" content="Mark van der Laan" />
   
 
    
-  <meta property="og:description" content="Everything you need to know about programming microcontrollers, setting up breadboards and more">
+  <meta property="og:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%B %-d, %Y&quot; }} {% if post.image %} {% endif %} {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }} {% assign excerpt_word_count =...">
   
 
 
@@ -94,11 +92,11 @@
   <meta name="twitter:creator" content="@" />
 
   
-  <meta name="twitter:title" content="Embedded development tutorials" />
+  <meta name="twitter:title" content="Mark van der Laan" />
   
 
   
-  <meta name="twitter:description" content="Everything you need to know about programming microcontrollers, setting up breadboards and more">
+  <meta name="twitter:description" content="{% for post in paginator.posts %} {{ post.title }} {% if post.subtitle %} {{ post.subtitle }} {% endif %} Posted on {{ post.date | date: &quot;%B %-d, %Y&quot; }} {% if post.image %} {% endif %} {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }} {% assign excerpt_word_count =...">
   
 
   
@@ -125,16 +123,12 @@
         <span class="icon-bar"></span>
       </button>
       
-        <a class="navbar-brand" href="">Embedded development</a>
+        <a class="navbar-brand" href="">Mark van der Laan</a>
       
     </div>
 
     <div class="collapse navbar-collapse" id="main-navbar">
       <ul class="nav navbar-nav navbar-right">
-      
-        
-          <li><a href="/aboutthiswebsite">About this website</a></li>
-        
       
         
           <li><a href="/author">Author</a></li>
@@ -162,12 +156,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <div class="page-heading">
-          <h1>Embedded development tutorials</h1>
-		  
-		    
-            <hr class="small">
-            <span class="page-subheading">Everything you need to know about programming microcontrollers, setting up breadboards and more</span>
-			
+          <h1>Mark van der Laan</h1>
 		  
 		  
 		  
