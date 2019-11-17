@@ -1,10 +1,11 @@
 overview:
-    # - "I have a Master Degree in Computer Engineering from Hanoi University of Technology. I am a data engineer with 9+ years of experience. I am motivated and enthusiastic by new computing challenges, esp. ones related to Big Data, AI & Blockchain."
-    # - "I am flexible to project demands. I thrive in unfamiliar situations and enjoy opportunities to learn and gain exposure to new ideas and experiences. I am open and willing to learn whatever is necessary to accomplish goals."
+    - ""
 
 education:
-    # - degree: MSc with distinction, Computer Engineering
-    #   time: 2011 - 2013
+    - degree: BSc, Information Science
+      time: 2014 - 2017
+    - degree: MSc, Data Science
+      time: 2017 - 2018
     #   school: Hanoi University of Technology
     # - degree: BSc with distinction, Computer Engineering
     #   time: 2005 - 2010
