@@ -14,3 +14,4 @@ vendor
 _compress_images_cache.yml
 
 terraform/.terraform
+terraform/terraform-state/.terraform
