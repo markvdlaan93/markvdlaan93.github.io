@@ -8,7 +8,7 @@ tags: C programming, AVR, time register
 
 ## Overview
 
-In this article, I will explain how to build C programs in which you can control the timer and interrupt registers of an AVR microcontroller. If don't know where to start, I have a tutorial [here]({{ site.baseurl }}{% link _posts/2019-10-27-isp-programmer.md %}) that explains the basics of how to setup a microcontroller and turn on a LED.
+In this article, I will explain how to build C programs in which you can control the timer and interrupt registers of an AVR microcontroller. If don't know where to start, I have a tutorial [here]({{ site.baseurl }}{% link _posts/2019-10-30-isp-programmer.md %}) that explains the basics of how to setup a microcontroller and turn on a LED.
 
 ## Objective
 
